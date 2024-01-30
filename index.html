@@ -139,6 +139,38 @@
       left: 0;
     }
 
+    .header {
+      padding: 2rem 0;
+      background-color: #003049;
+      color: #e0f2f1;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .header .flex {
+      justify-content: center;
+      align-items: center;
+    }
+
+    .header .social-links {
+      display: flex;
+      gap: 1rem;
+      margin-top: 10px;
+    }
+
+    .header .social-links a {
+      color: #e0f2f1;
+      font-size: 1.5rem;
+    }
+
+    .header .social-links a:hover {
+      color: #fff;
+    }
+
     @media (max-width: 1024px) {
       .w-1/2 {
         width: 100%;
@@ -152,14 +184,14 @@
 </head>
 
 <body class="bg-baby-blue">
-  <header class="bg-navy-blue p-4">
-    <div class="flex justify-between items-center">
+  <header class="header">
+    <div class="flex flex-col justify-center items-center">
       <h1 class="text-baby-blue font-bold text-2xl">John Doe</h1>
-      <div class="flex items-center">
-        <a href="https://www.linkedin.com/in/thomsendavid/" target="_blank" class="text-baby-blue hover:text-white mr-4">
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/johndoe/" target="_blank" class="text-baby-blue hover:text-white mr-4">
           <i class="fab fa-linkedin fa-lg"></i>
         </a>
-        <a href="https://github.com/dthomsen116" target="_blank" class="text-baby-blue hover:text-white">
+        <a href="https://github.com/johndoe" target="_blank" class="text-baby-blue hover:text-white">
           <i class="fab fa-github fa-lg"></i>
         </a>
       </div>
