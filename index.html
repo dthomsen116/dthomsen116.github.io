@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,171 +9,223 @@
   <style>
     body {
       font-family: 'Helvetica', 'Arial', sans-serif;
+    }
+
+    .bg-baby-blue {
       background-color: #e0f2f1;
     }
 
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
+    .bg-navy-blue {
+      background-color: #003049;
     }
 
-    .header {
-      background-color: #003153;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 10px;
+    .text-baby-blue {
+      color: #e0f2f1;
     }
 
-    .header h1 {
-      font-size: 36px;
+    .text-navy-blue {
+      color: #003049;
+    }
+
+    .font-bold {
       font-weight: bold;
-      color: #e0f2f1;
     }
 
-    .header p {
-      font-size: 16px;
-      color: #e0f2f1;
+    .font-semibold {
+      font-weight: 600;
     }
 
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
+    .font-light {
+      font-weight: 300;
     }
 
-    .project {
-      background-color: #e0f2f1;
-      padding: 20px;
-      border: 1px solid #003153;
-      border-radius: 10px;
+    .text-center {
+      text-align: center;
     }
 
-    .project h3 {
-      font-size: 24px;
-      font-weight: bold;
-      color: #003153;
+    .text-left {
+      text-align: left;
     }
 
-    .project p {
-      font-size: 16px;
-      color: #003153;
+    .text-right {
+      text-align: right;
     }
 
-    .project img {
-      width: 100%;
-      height: auto;
-      margin-bottom: 20px;
+    .p-4 {
+      padding: 1rem;
     }
 
-    .project a {
-      text-decoration: none;
-      color: #003153;
+    .p-8 {
+      padding: 2rem;
     }
 
-    .project a:hover {
-      color: #f00;
+    .m-4 {
+      margin: 1rem;
     }
 
-    .footer {
-      background-color: #003153;
-      padding: 20px;
-      margin-top: 20px;
-      border-radius: 10px;
+    .m-8 {
+      margin: 2rem;
     }
 
-    .footer p {
-      font-size: 16px;
-      color: #e0f2f1;
+    .border-b {
+      border-bottom: 1px solid #000;
     }
 
-    .social-links {
+    .border-t {
+      border-top: 1px solid #000;
+    }
+
+    .rounded-full {
+      border-radius: 50%;
+    }
+
+    .w-1/2 {
+      width: 50%;
+    }
+
+    .w-1/3 {
+      width: 33.33%;
+    }
+
+    .h-1/2 {
+      height: 50%;
+    }
+
+    .h-1/3 {
+      height: 33.33%;
+    }
+
+    .flex {
       display: flex;
-      justify-content: flex-end;
+    }
+
+    .flex-col {
+      flex-direction: column;
+    }
+
+    .flex-row {
+      flex-direction: row;
+    }
+
+    .justify-center {
+      justify-content: center;
+    }
+
+    .justify-between {
+      justify-content: space-between;
+    }
+
+    .items-center {
       align-items: center;
     }
 
-    .social-links a {
-      margin-right: 20px;
-      color: #e0f2f1;
+    .absolute {
+      position: absolute;
     }
 
-    .social-links a:hover {
-      color: #f00;
+    .top-0 {
+      top: 0;
+    }
+
+    .right-0 {
+      right: 0;
+    }
+
+    .bottom-0 {
+      bottom: 0;
+    }
+
+    .left-0 {
+      left: 0;
+    }
+
+    @media (max-width: 1024px) {
+      .w-1/2 {
+        width: 100%;
+      }
+
+      .w-1/3 {
+        width: 100%;
+      }
     }
   </style>
 </head>
 
-<body>
-  <div class="container">
-    <div class="header">
-      <h1>David Thomsen</h1>
-      <p>Computer Networking and Cybersecurity Student</p>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/thomsendavid/"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/dthomsen116"><i class="fab fa-github"></i></a>
+<body class="bg-baby-blue">
+  <header class="bg-navy-blue p-4">
+    <div class="flex justify-between items-center">
+      <h1 class="text-baby-blue font-bold text-2xl">John Doe</h1>
+      <div class="flex items-center">
+        <a href="https://www.linkedin.com/in/thomsendavid/" target="_blank" class="text-baby-blue hover:text-white mr-4">
+          <i class="fab fa-linkedin fa-lg"></i>
+        </a>
+        <a href="https://github.com/dthomsen116" target="_blank" class="text-baby-blue hover:text-white">
+          <i class="fab fa-github fa-lg"></i>
+        </a>
       </div>
     </div>
-    <div class="projects">
-      <div class="project">
-        <h3>Project 1</h3>
-        <img src="https://www.ancodeai.com/placeholder.svg" alt="Image of Project 1" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget lacus eget nunc luctus
-          vestibulum. Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel
-          scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
-          nibh, ut fermentum massa justo sit amet risus.</p>
-        <a href="#">View Project</a>
+  </header>
+
+  <main class="p-8">
+    <section class="mb-8 text-center">
+      <h2 class="text-navy-blue font-bold text-2xl mb-4">About Me</h2>
+      <div class="flex flex-col w-1/2 mx-auto">
+        <div class="rounded-full overflow-hidden w-48 h-48 mx-auto mb-4">
+          <img src="https://www.ancodeai.com/placeholder.svg" alt="A picture of John Doe" />
+        </div>
+        <p class="text-navy-blue font-light text-lg">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget lacus eget nunc luctus
+          vestibulum. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+          condimentum nibh, ut fermentum massa justo sit amet risus.
+        </p>
       </div>
-      <div class="project">
-        <h3>Project 2</h3>
-        <img src="https://www.ancodeai.com/placeholder.svg" alt="Image of Project 2" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget lacus eget nunc luctus
-          vestibulum. Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel
-          scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
-          nibh, ut fermentum massa justo sit amet risus.</p>
-        <a href="#">View Project</a>
+    </section>
+
+    <section>
+      <h2 class="text-navy-blue font-bold text-2xl mb-4">Projects</h2>
+      <div class="flex flex-wrap justify-center">
+        <div class="w-1/3 p-4 m-4 bg-white rounded-lg shadow-md">
+          <div class="rounded-full overflow-hidden w-24 h-24 mb-4">
+            <img src="https://www.ancodeai.com/placeholder.svg" alt="A picture of a project" />
+          </div>
+          <h3 class="text-navy-blue font-bold text-xl mb-2">Project Title</h3>
+          <p class="text-navy-blue font-light text-lg">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget lacus eget nunc luctus
+            vestibulum. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+            condimentum nibh, ut fermentum massa justo sit amet risus.
+          </p>
+        </div>
+        <div class="w-1/3 p-4 m-4 bg-white rounded-lg shadow-md">
+          <div class="rounded-full overflow-hidden w-24 h-24 mb-4">
+            <img src="https://www.ancodeai.com/placeholder.svg" alt="A picture of a project" />
+          </div>
+          <h3 class="text-navy-blue font-bold text-xl mb-2">Project Title</h3>
+          <p class="text-navy-blue font-light text-lg">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget lacus eget nunc luctus
+            vestibulum. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+            condimentum nibh, ut fermentum massa justo sit amet risus.
+          </p>
+        </div>
+        <div class="w-1/3 p-4 m-4 bg-white rounded-lg shadow-md">
+          <div class="rounded-full overflow-hidden w-24 h-24 mb-4">
+            <img src="https://www.ancodeai.com/placeholder.svg" alt="A picture of a project" />
+          </div>
+          <h3 class="text-navy-blue font-bold text-xl mb-2">Project Title</h3>
+          <p class="text-navy-blue font-light text-lg">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget lacus eget nunc luctus
+            vestibulum. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+            condimentum nibh, ut fermentum massa justo sit amet risus.
+          </p>
+        </div>
       </div>
-      <div class="project">
-        <h3>Project 3</h3>
-        <img src="https://www.ancodeai.com/placeholder.svg" alt="Image of Project 3" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget lacus eget nunc luctus
-          vestibulum. Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel
-          scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
-          nibh, ut fermentum massa justo sit amet risus.</p>
-        <a href="#">View Project</a>
-      </div>
-      <div class="project">
-        <h3>Project 4</h3>
-        <img src="https://www.ancodeai.com/placeholder.svg" alt="Image of Project 4" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget lacus eget nunc luctus
-          vestibulum. Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel
-          scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
-          nibh, ut fermentum massa justo sit amet risus.</p>
-        <a href="#">View Project</a>
-      </div>
-      <div class="project">
-        <h3>Project 5</h3>
-        <img src="https://www.ancodeai.com/placeholder.svg" alt="Image of Project 5" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget lacus eget nunc luctus
-          vestibulum. Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel
-          scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
-          nibh, ut fermentum massa justo sit amet risus.</p>
-        <a href="#">View Project</a>
-      </div>
-      <div class="project">
-        <h3>Project 6</h3>
-        <img src="https://www.ancodeai.com/placeholder.svg" alt="Image of Project 6" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget lacus eget nunc luctus
-          vestibulum. Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel
-          scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
-          nibh, ut fermentum massa justo sit amet risus.</p>
-        <a href="#">View Project</a>
-      </div>
+    </section>
+  </main>
+
+  <footer class="bg-navy-blue p-4">
+    <div class="text-center text-baby-blue">
+      Copyright &copy; 2023 John Doe
     </div>
-    <div class="footer">
-      <p>Copyright &copy; 2023 John Doe</p>
-    </div>
-  </div>
+  </footer>
 </body>
 
 </html>
