@@ -2,318 +2,315 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <title>Portfolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <style>
-    body {
-      font-family: 'Helvetica', 'Arial', sans-serif;
-    }
+    <meta charset="UTF-8" />
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <style>
+        body {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+        }
 
-    .bg-baby-blue {
-      background-color: #e0f2f1;
-    }
+        .bg-baby-blue {
+            background-color: #e0f2f1;
+        }
 
-    .bg-navy-blue {
-      background-color: #003049;
-    }
+        .bg-navy-blue {
+            background-color: #003049;
+        }
 
-    .text-baby-blue {
-      color: #e0f2f1;
-    }
+        .text-baby-blue {
+            color: #e0f2f1;
+        }
 
-    .text-navy-blue {
-      color: #003049;
-    }
+        .text-navy-blue {
+            color: #003049;
+        }
 
-    .font-bold {
-      font-weight: bold;
-    }
+        .font-bold {
+            font-weight: bold;
+        }
 
-    .font-semibold {
-      font-weight: 600;
-    }
+        .font-semibold {
+            font-weight: 600;
+        }
 
-    .font-light {
-      font-weight: 300;
-    }
+        .font-light {
+            font-weight: 300;
+        }
 
-    .text-center {
-      text-align: center;
-    }
+        .text-center {
+            text-align: center;
+        }
 
-    .text-left {
-      text-align: left;
-    }
+        .text-left {
+            text-align: left;
+        }
 
-    .text-right {
-      text-align: right;
-    }
+        .text-right {
+            text-align: right;
+        }
 
-    .p-4 {
-      padding: 1rem;
-    }
+        .p-4 {
+            padding: 1rem;
+        }
 
-    .p-8 {
-      padding: 2rem;
-    }
+        .p-8 {
+            padding: 2rem;
+        }
 
-    .m-4 {
-      margin: 1rem;
-    }
+        .m-4 {
+            margin: 1rem;
+        }
 
-    .m-8 {
-      margin: 2rem;
-    }
+        .m-8 {
+            margin: 2rem;
+        }
 
-    .border-b {
-      border-bottom: 1px solid #000;
-    }
+        .border-b {
+            border-bottom: 1px solid #000;
+        }
 
-    .border-t {
-      border-top: 1px solid #000;
-    }
+        .border-t {
+            border-top: 1px solid #000;
+        }
 
-    .rounded-full {
-      border-radius: 50%;
-    }
+        .rounded-full {
+            border-radius: 50%;
+        }
 
-    .w-1/2 {
-      width: 50%;
-    }
+        .w-1/2 {
+            width: 50%;
+        }
 
-    .w-1/3 {
-      width: 33.33%;
-    }
+        .w-1/3 {
+            width: 33.33%;
+        }
 
-    .h-1/2 {
-      height: 50%;
-    }
+        .h-1/2 {
+            height: 50%;
+        }
 
-    .h-1/3 {
-      height: 33.33%;
-    }
+        .h-1/3 {
+            height: 33.33%;
+        }
 
-    .flex {
-      display: flex;
-    }
+        .flex {
+            display: flex;
+        }
 
-    .flex-col {
-      flex-direction: column;
-    }
+        .flex-col {
+            flex-direction: column;
+        }
 
-    .flex-row {
-      flex-direction: row;
-    }
+        .flex-row {
+            flex-direction: row;
+        }
 
-    .justify-center {
-      justify-content: center;
-    }
+        .justify-center {
+            justify-content: center;
+        }
 
-    .justify-between {
-      justify-content: space-between;
-    }
+        .justify-between {
+            justify-content: space-between;
+        }
 
-    .items-center {
-      align-items: center;
-    }
+        .items-center {
+            align-items: center;
+        }
 
-    .absolute {
-      position: absolute;
-    }
+        .absolute {
+            position: absolute;
+        }
 
-    .top-0 {
-      top: 0;
-    }
+        .top-0 {
+            top: 0;
+        }
 
-    .right-0 {
-      right: 0;
-    }
+        .right-0 {
+            right: 0;
+        }
 
-    .bottom-0 {
-      bottom: 0;
-    }
+        .bottom-0 {
+            bottom: 0;
+        }
 
-    .left-0 {
-      left: 0;
-    }
+        .left-0 {
+            left: 0;
+        }
 
-    .header {
-      padding: 2rem 0;
-      background-color: #003049;
-      color: #e0f2f1;
-      text-align: center;
-    }
+        .header {
+            padding: 2rem 0;
+            background-color: #003049;
+            color: #e0f2f1;
+            text-align: center;
+        }
 
-    .header h1 {
-      font-size: 3rem;
-      font-weight: bold;
-    }
+        .header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
 
-    .header .flex {
-      justify-content: center;
-      align-items: center;
-    }
+        .header .flex {
+            justify-content: center;
+            align-items: center;
+        }
 
-    .header .social-links {
-      display: flex;
-      gap: 1rem;
-      margin-top: 20px;
-    }
+        .header .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 20px;
+        }
 
-    .header .social-links a {
-      color: #e0f2f1;
-      font-size: 1.5rem;
-    }
+        .header .social-links a {
+            color: #e0f2f1;
+            font-size: 1.5rem;
+        }
 
-    .header .social-links a:hover {
-      color: #fff;
-    }
+        .header .social-links a:hover {
+            color: #fff;
+        }
 
-    @media (max-width: 1024px) {
-      .w-1/2 {
-        width: 100%;
-      }
-
-      .w-1/3 {
-        width: 100%;
-      }
-    }
-  </style>
+        @media (max-width: 1024px) {
+            .w-1/2 {
+                width: 100%;
+            }
+            .w-1/3 {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 
 <body class="bg-baby-blue">
-  <header class="header">
-    <div class="flex flex-col justify-center items-center">
-      <h1 class="text-baby-blue font-bold text-2xl">John Doe</h1>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/thomsendavid/" target="_blank" class="text-baby-blue hover:text-white mr-4">
+    <header class="header">
+        <div class="flex flex-col justify-center items-center">
+            <h1 class="text-baby-blue font-bold text-2xl">David Thomsen</h1>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/thomsendavid/" target="_blank" class="text-baby-blue hover:text-white mr-4">
           <i class="fab fa-linkedin fa-lg"></i>
         </a>
-        <a href="https://github.com/dthomsen116" target="_blank" class="text-baby-blue hover:text-white">
+                <a href="https://github.com/dthomsen116" target="_blank" class="text-baby-blue hover:text-white">
           <i class="fab fa-github fa-lg"></i>
         </a>
-      </div>
-    </div>
-  </header>
+            </div>
+        </div>
+    </header>
 
-<main class="p-8">
-  <section class="mb-8 text-center">
-    <h2 class="text-navy-blue font-bold text-2xl mb-4">About Me</h2>
-    <div class="flex flex-col w-1/2 mx-auto">
-      <div class="rounded-full overflow-hidden w-48 h-48 mx-auto mb-4">
-        <img src="https://media.discordapp.net/attachments/704479669793194087/1200175560740048906/IMG_2456.png?ex=65c53997&is=65b2c497&hm=cd741dab88255b0cc9420c72bfef6d2dd910d83255f16927ae647e035df1e48b&=&format=webp&quality=lossless&width=483&height=599" alt="A picture of John Doe" />
-      </div>
-      <p class="text-navy-blue font-light text-lg">
-        Hello there! I'm David Thomsen, a rising senior at Champlain College pursuing a Bachelor of Science in Computer Networking and Cybersecurity. My journey has been marked by a passion for all things computers, with a keen focus on Dev-Ops, Systems Administration, and Enterprise Virtualization.
+    <main class="p-8">
+        <section class="mb-8 text-center">
+            <h2 class="text-navy-blue font-bold text-2xl mb-4">About Me</h2>
+            <div class="flex flex-col w-1/2 mx-auto">
+                <div class="rounded-full overflow-hidden w-48 h-48 mx-auto mb-4">
+                    <img src="https://media.discordapp.net/attachments/704479669793194087/1200175560740048906/IMG_2456.png?ex=65c53997&is=65b2c497&hm=cd741dab88255b0cc9420c72bfef6d2dd910d83255f16927ae647e035df1e48b&=&format=webp&quality=lossless&width=483&height=599" alt="A picture of John Doe"
+                    />
+                </div>
+                <p class="text-navy-blue font-light text-lg">
+                    Hello there! I'm David Thomsen, a rising senior at Champlain College pursuing a Bachelor of Science in Computer Networking and Cybersecurity. My journey has been marked by a passion for all things computers, with a keen focus on Dev-Ops, Systems Administration,
+                    and Enterprise Virtualization. <br> <br>
+                    <strong>
 
-        <strong>Academic Achievements:</strong><br>
-        I take pride in consistently earning a place on the Deans, Presidents, and Trustees Lists, a testament to my dedication to academic excellence. Currently specializing in Systems Administration, I am enthusiastic about exploring the intricate world of administration and security.
+                    <strong>Academic Achievements:</strong><br> I take pride in consistently earning a place on the Deans, Presidents, and Trustees Lists, a testament to my dedication to academic excellence. Currently specializing in Systems Administration, I
+                    am enthusiastic about exploring the intricate world of administration and security. <br> <br>
 
-        <strong>Capstone Project - Automation and Accessibility:</strong><br>
-        In my academic endeavors, I've undertaken a noteworthy Capstone Project centered around Automation and Accessibility. This project not only showcases my technical skills but also reflects my commitment to making technology more accessible and efficient.
+                    <strong>Capstone Project - Automation and Accessibility:</strong><br> In my academic endeavors, I've undertaken a noteworthy Capstone Project centered around Automation and Accessibility. This project not only showcases my technical
+                    skills but also reflects my commitment to making technology more accessible and efficient. <br> <br>
 
-        <strong>Tech Enthusiast:</strong><br>
-        My enthusiasm for technology extends beyond the classroom. I enjoy utilizing many types of hardware to build different systems and I have built my personal PC as well as multiple other computers that have been given as gifts or used as servers in my home environment.
+                    <strong>Tech Enthusiast:</strong><br> My enthusiasm for technology extends beyond the classroom. I enjoy utilizing many types of hardware to build different systems and I have built my personal PC as well as multiple other computers
+                    that have been given as gifts or used as servers in my home environment. <br> <br>
 
-        <strong>Looking Forward:</strong><br>
-        As I embark on my senior year, I am excited about the possibilities that lie ahead. My goal is to leverage my skills and knowledge to contribute meaningfully to the world of technology, and I am driven to make a positive impact on the growing world of technology.
-
-        Thank you for stopping by, and I invite you to explore more about my academic journey, projects, and the exciting world of technology I am constantly working on. 
-      </p>
-    </div>
-  </section>
-</main>
+                    <strong>Looking Forward:</strong><br> As I embark on my senior year, I am excited about the possibilities that lie ahead. My goal is to leverage my skills and knowledge to contribute meaningfully to the world of technology, and I am
+                    driven to make a positive impact on the growing world of technology. <br> Thank you for stopping by, and I invite you to explore more about my academic journey, projects, and the exciting world of technology I am constantly working
+                    on. <br>
+                    
+                    </strong>
+                </p>
+            </div>
+        </section>
+    </main>
 
 
     <section>
-      <h2 class="text-navy-blue font-bold text-2xl mb-4">Projects</h2>
-      <div class="flex flex-wrap justify-center">
-        <div class="w-1/3 p-4 m-4 bg-white rounded-lg shadow-md">
-          <div class="rounded-full overflow-hidden w-24 h-24 mb-4">
-            <img src="https://www.ancodeai.com/placeholder.svg" alt="A picture of a project" />
-          </div>
-          <h3 class="text-navy-blue font-bold text-xl mb-2">
-            <a href="AAAAAAAAA.AAA">Project Title</a>
-          </h3>
-          <p class="text-navy-blue font-light text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget lacus eget nunc luctus
-            vestibulum. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-            condimentum nibh, ut fermentum massa justo sit amet risus.
-          </p>
+        <h2 class="text-navy-blue font-bold text-center mb-4">Projects</h2>
+        <div class="flex flex-wrap justify-center">
+            <div class="w-1/3 p-4 m-4 bg-white rounded-lg shadow-md">
+                <div class="rounded-full overflow-hidden w-24 h-24 mb-4">
+                    <img src="https://www.ancodeai.com/placeholder.svg" alt="A picture of a project" />
+                </div>
+                <h3 class="text-navy-blue font-bold text-xl mb-2">
+                    <a href="AAAAAAAAA.AAA">Project Title</a>
+                </h3>
+                <p class="text-navy-blue font-light text-lg">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget lacus eget nunc luctus vestibulum. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                </p>
+            </div>
+            <div class="w-1/3 p-4 m-4 bg-white rounded-lg shadow-md">
+                <div class="rounded-full overflow-hidden w-24 h-24 mb-4">
+                    <img src="https://www.ancodeai.com/placeholder.svg" alt="A picture of a project" />
+                </div>
+                <h3 class="text-navy-blue font-bold text-xl mb-2">
+                    <a href="AAAAAAAAA.AAA">Project Title</a>
+                </h3>
+                <p class="text-navy-blue font-light text-lg">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget lacus eget nunc luctus vestibulum. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                </p>
+            </div>
+            <div class="w-1/3 p-4 m-4 bg-white rounded-lg shadow-md">
+                <div class="rounded-full overflow-hidden w-24 h-24 mb-4">
+                    <img src="https://www.ancodeai.com/placeholder.svg" alt="A picture of a project" />
+                </div>
+                <h3 class="text-navy-blue font-bold text-xl mb-2">
+                    <a href="AAAAAAAAA.AAA">Project Title</a>
+                </h3>
+                <p class="text-navy-blue font-light text-lg">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget lacus eget nunc luctus vestibulum. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                </p>
+            </div>
         </div>
-        <div class="w-1/3 p-4 m-4 bg-white rounded-lg shadow-md">
-          <div class="rounded-full overflow-hidden w-24 h-24 mb-4">
-            <img src="https://www.ancodeai.com/placeholder.svg" alt="A picture of a project" />
-          </div>
-          <h3 class="text-navy-blue font-bold text-xl mb-2">
-            <a href="AAAAAAAAA.AAA">Project Title</a>
-          </h3>
-          <p class="text-navy-blue font-light text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget lacus eget nunc luctus
-            vestibulum. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-            condimentum nibh, ut fermentum massa justo sit amet risus.
-          </p>
-        </div>
-        <div class="w-1/3 p-4 m-4 bg-white rounded-lg shadow-md">
-          <div class="rounded-full overflow-hidden w-24 h-24 mb-4">
-            <img src="https://www.ancodeai.com/placeholder.svg" alt="A picture of a project" />
-          </div>
-          <h3 class="text-navy-blue font-bold text-xl mb-2">
-            <a href="AAAAAAAAA.AAA">Project Title</a>
-          </h3>
-          <p class="text-navy-blue font-light text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget lacus eget nunc luctus
-            vestibulum. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-            condimentum nibh, ut fermentum massa justo sit amet risus.
-          </p>
-        </div>
-      </div>
     </section>
 
     <section class="mt-8">
-      <h2 class="text-navy-blue font-bold text-2xl mb-4">Courses Taken</h2>
-      <div class="flex flex-wrap justify-center">
-        <div class="w-1/3 p-4 m-4 bg-white rounded-lg shadow-md">
-          <h3 class="text-navy-blue font-bold text-xl mb-2">Systems Administration</h3>
-          <ul class="list-disc ml-4">
-            <li>Course 1</li>
-            <li>Course 2</li>
-            <li>Course 3</li>
-            <li>Course 4</li>
-            <li>Course 5</li>
-          </ul>
+        <h2 class="text-navy-blue font-bold text-2xl mb-4">Courses Taken</h2>
+        <div class="flex flex-wrap justify-center">
+            <div class="w-1/3 p-4 m-4 bg-white rounded-lg shadow-md">
+                <h3 class="text-navy-blue font-bold text-xl mb-2">Systems Administration</h3>
+                <ul class="list-disc ml-4">
+                    <li>Course 1</li>
+                    <li>Course 2</li>
+                    <li>Course 3</li>
+                    <li>Course 4</li>
+                    <li>Course 5</li>
+                </ul>
+            </div>
+            <div class="w-1/3 p-4 m-4 bg-white rounded-lg shadow-md">
+                <h3 class="text-navy-blue font-bold text-xl mb-2">Networking</h3>
+                <ul class="list-disc ml-4">
+                    <li>Course 1</li>
+                    <li>Course 2</li>
+                    <li>Course 3</li>
+                    <li>Course 4</li>
+                    <li>Course 5</li>
+                </ul>
+            </div>
+            <div class="w-1/3 p-4 m-4 bg-white rounded-lg shadow-md">
+                <h3 class="text-navy-blue font-bold text-xl mb-2">Coding/Other</h3>
+                <ul class="list-disc ml-4">
+                    <li>Course 1</li>
+                    <li>Course 2</li>
+                    <li>Course 3</li>
+                    <li>Course 4</li>
+                    <li>Course 5</li>
+                </ul>
+            </div>
         </div>
-        <div class="w-1/3 p-4 m-4 bg-white rounded-lg shadow-md">
-          <h3 class="text-navy-blue font-bold text-xl mb-2">Networking</h3>
-          <ul class="list-disc ml-4">
-            <li>Course 1</li>
-            <li>Course 2</li>
-            <li>Course 3</li>
-            <li>Course 4</li>
-            <li>Course 5</li>
-          </ul>
-        </div>
-        <div class="w-1/3 p-4 m-4 bg-white rounded-lg shadow-md">
-          <h3 class="text-navy-blue font-bold text-xl mb-2">Coding/Other</h3>
-          <ul class="list-disc ml-4">
-            <li>Course 1</li>
-            <li>Course 2</li>
-            <li>Course 3</li>
-            <li>Course 4</li>
-            <li>Course 5</li>
-          </ul>
-        </div>
-      </div>
     </section>
-  </main>
+    </main>
 
-  <footer class="bg-navy-blue p-4">
-    <div class="text-center text-baby-blue">
-      Copyright &copy; 2023 John Doe
-    </div>
-  </footer>
+    <footer class="bg-navy-blue p-4">
+        <div class="text-center text-baby-blue">
+            Copyright &copy; 2023 John Doe
+        </div>
+    </footer>
 </body>
 
 </html>
